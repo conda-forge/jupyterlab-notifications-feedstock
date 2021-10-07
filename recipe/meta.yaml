@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-notifications" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +19,13 @@ requirements:
     - nodejs >=12.0.0
   host:
     - jupyter-packaging >=0.7.9,<0.8
-    - jupyterlab >=3,<4
+    - jupyterlab >=3.1,<4
     - python >=3.6
     - pip
     - setuptools >=40.8.0
     - wheel
   run:
-    - jupyterlab >=3,<4
+    - jupyterlab >=3.1,<4
     - python >=3.6
 
 test:
