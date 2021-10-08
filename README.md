@@ -118,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@m-rossi](https://github.com/m-rossi/)
+* [@mwakaba2](https://github.com/mwakaba2/)
 
