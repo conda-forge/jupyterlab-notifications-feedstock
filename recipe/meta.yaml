@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-notifications" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1a4335750d2b8568b0acaa755fba6a164b77f84be93a785c64eeafab404b1951
+  sha256: 757bdf82b86df77f2eac8cb3581cf50b3a4f52057273682ff8e9fbc44c8e652b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Jupyterlab extension to show notebook cell completion browser notifications'
+  summary: Jupyterlab extension to show notebook cell completion browser notifications
   dev_url: https://github.com/mwakaba2/jupyterlab-notifications
 
 extra:
