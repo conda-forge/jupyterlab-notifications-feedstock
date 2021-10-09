@@ -1,5 +1,5 @@
 {% set name = "jupyterlab-notifications" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 757bdf82b86df77f2eac8cb3581cf50b3a4f52057273682ff8e9fbc44c8e652b
+  sha256: 192387d8dd0bc940e46b684bd4304c9e4debfa5ea309ec1d88fb8b518fb214c2
 
 build:
   noarch: python
