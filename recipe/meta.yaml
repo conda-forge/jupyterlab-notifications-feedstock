@@ -18,15 +18,15 @@ requirements:
   build:
     - nodejs >=12.0.0
   host:
-    - jupyter-packaging >=0.7.9,<0.8
-    - jupyterlab >=3,<4
-    - python >=3.6
+    - hatch-jupyter-builder >=0.5
+    - hatch-nodejs-version >=0.3.2
+    - hatchling >=1.5.0
+    - jupyterlab >=4.0.0,<5
     - pip
-    - setuptools >=40.8.0
-    - wheel
+    - python >=3.8
   run:
-    - jupyterlab >=3,<4
-    - python >=3.6
+    - jupyterlab >=4.0.0,<5
+    - python >=3.8
 
 test:
   commands:
