@@ -36,7 +36,7 @@ about:
   home: https://github.com/mwakaba2/jupyterlab-notifications
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: Jupyterlab extension to show notebook cell completion browser notifications
   dev_url: https://github.com/mwakaba2/jupyterlab-notifications
 
