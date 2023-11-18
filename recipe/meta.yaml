@@ -1,13 +1,13 @@
 {% set name = "jupyterlab-notifications" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 192387d8dd0bc940e46b684bd4304c9e4debfa5ea309ec1d88fb8b518fb214c2
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f161c7b2f7e93cd2a438feb66c06577b7b1b15ad7b16438a68e01b402c787f09
 
 build:
   noarch: python
@@ -18,15 +18,15 @@ requirements:
   build:
     - nodejs >=12.0.0
   host:
-    - jupyter-packaging >=0.7.9,<0.8
-    - jupyterlab >=3,<4
-    - python >=3.6
+    - hatch-jupyter-builder >=0.5
+    - hatch-nodejs-version >=0.3.2
+    - hatchling >=1.5.0
+    - jupyterlab >=4.0.0,<5
     - pip
-    - setuptools >=40.8.0
-    - wheel
+    - python >=3.8
   run:
-    - jupyterlab >=3,<4
-    - python >=3.6
+    - jupyterlab >=4.0.0,<5
+    - python >=3.8
 
 test:
   commands:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/mwakaba2/jupyterlab-notifications
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: Jupyterlab extension to show notebook cell completion browser notifications
   dev_url: https://github.com/mwakaba2/jupyterlab-notifications
 
